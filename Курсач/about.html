@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Определяет версию HTML, используемую в документе. В данном случае это HTML5. -->
+<html lang="ru"> <!-- Атрибут lang объявляет основной язык страницы с использованием языковых кодов ISO -->
+    <head> <!-- Головной раздел -->
+        <meta charset="UTF-8"> <!-- объявляет кодировку символов -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- задает ширину видимой области равной ширине устройств -->
+        <title>Плачь и читай</title> <!-- имя страницы -->
+	<link rel="icon" type="image/png" href="https://i.pinimg.com/564x/2b/da/b3/2bdab3093d82defe4e013f53eb2307bd.jpg"> <!-- Фавиконка(картинка рядом с названием страницы) -->
+    <link rel="stylesheet" href="styleFLEX.css">
+    <link rel="stylesheet" href="headerFLEX.css">
+    <!-- Библиотека иконок --> 
+    <script src="https://kit.fontawesome.com/f0b1877548.js" crossorigin="anonymous"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle('fa-regular');
+            x.classList.toggle('fa-heart');
+            x.classList.toggle('fa-solid');
+            x.classList.toggle('fa-heart');
+        };
+    </script>
+    </head>
+    <body> <!-- содержимое страницы -->
+        <header>
+            <div class="logo">
+                <a href="flex.html"><img src="https://clck.ru/32JGQA"></a>
+                <h1><a href="enter.html">Book, sir!</a></h1>
+            </div>
+            <nav class="hamburger-menu">
+                <!--кнопка меню будет выполнена как чекбокс-->
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span> <!--место для кнопки меню в мобильном устройстве-->
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#contacts">Связаться с нами</a></li>
+                    <li><a class="menu__item" href="#stat">Канцтовары</a></li>
+                    <li><a class="menu__item" href="#gift">Подарки</a></li>
+                    <li><a class="menu__item" href="#book">Книги</a></li>
+                    <li><a class="menu__item" href="flex.html">Главная</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="chel">
+            <div class="a">
+                <img src="https://img1.goodfon.ru/wallpaper/nbig/f/6b/anonymous-anonimus-anonim.jpg" width="100px" alt="">
+            </div>     
+            <div class="b">
+                <img src="https://img1.goodfon.ru/wallpaper/nbig/f/6b/anonymous-anonimus-anonim.jpg" width="100px" alt="">
+            </div>
+            <div class="c">
+                <img src="https://img1.goodfon.ru/wallpaper/nbig/f/6b/anonymous-anonimus-anonim.jpg" width="100px" alt="">
+            </div>
+            <div class="d">
+                <img src="https://img1.goodfon.ru/wallpaper/nbig/f/6b/anonymous-anonimus-anonim.jpg" width="100px" alt="">
+            </div>
+            <div class="e">
+                <img src="https://img1.goodfon.ru/wallpaper/nbig/f/6b/anonymous-anonimus-anonim.jpg" width="100px" alt="">
+            </div>
+            <div class="a1">
+                <p><span>Корнев Борис Алексеевич</span><br>
+                Директор онлайн-магазина BOOK, SIR!<br>
+                Следит за учётом товародвижения, обеспечением качественного обслуживания клиентов и Координирует деятельность персонала магазина.<br>
+                Любит анекдот про капитана и боцмана. Любимый трек - "Вечно молодой, вечно пьяный" Би-2.
+                </p>
+            </div>
+            <div class="b1">
+                <p><span>Мартыненко Елизавета Юрьевна</span><br>
+                Секретарь, правая рука директора.<br>
+                Помогает директору с бумажной работой, следит за порядком в коллективе, договаривается о сотрудничестве с издательствами и не только.<br>
+                Любит зелёный чай без сахара. Помимо работы занимается вязанием.   
+                </p>
+            </div>
+            <div class="c1">
+                <p><span>Орлов Денис Константинович</span><br>
+                Веб-дизайнер, творец нашего сайта :)<br>
+                В хороших отношениях с директором, часто рассказывает анекдот про 4 помидора.<br>
+                Любимая музыкальная группа - Порнофильмы. Неплохо играет на гитаре и вообще он умничка :3
+                </p>
+            </div>
+            <div class="d1">
+                <p><span>Константинова Софья Вячеславовна</span><br>
+                Менеджер по продажам/продавец. <br>
+                Ведёт двойную жизнь, на работе мило общается с покупателями, а дома совращает малолетних в дискордике. 
+                Создаёт образ сильной и независимой, хотя глубоко в душе нуждается в обнимашках.
+                </p>
+            </div>
+            <div class="e1">
+                <p><span>Мартыненко Святослав Юрьевич</span><br>
+                Курьер, доставляет покупателям заказы.<br>
+                Увлекается волейболом и любит аморальные шутки. Предпочитает проводить вечера в компании приставки и литра чая.
+                Мы всегда его поддерживаем в кризисных ситуациях.
+                </p>
+            </div>
+            <div class="heart1">
+                <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            </div>
+            <div class="heart2">
+                <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            </div>
+            <div class="heart3">
+                <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            </div>
+            <div class="heart4">
+                <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            </div>
+            <div class="heart5">
+                <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            </div>
+        </main>
+    </body>
+</html>

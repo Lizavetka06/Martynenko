@@ -1,0 +1,93 @@
+.body{
+    display: grid;
+    grid-template-columns: 1fr 60vw 1fr;
+    grid-template-rows: 200px 70px 500px 250px;
+    grid-template-areas: 
+        "head head   head" 
+        "gift navi   auth"
+        "gift senter auth"
+        "foot foot   foot";
+    column-gap: 20px;
+    row-gap: 20px;
+}
+h1 a {
+    color: #f3c33e;
+    text-decoration: none;
+}
+h1 a:visited {
+    color: #f3c33e;
+}
+
+main div {
+    margin: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+main a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+main a:hover {
+    color: rgb(210, 89, 89);
+    background-color: transparent;
+}
+main a:visited {
+    color: rgb(255, 0, 0);
+}
+
+/*кнопка 1*/
+.buttons {
+    border: 0;
+}
+.containerforbtn{
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}
+.btn1{
+    padding: 10px 20px;
+    box-shadow:  0px 10px 20px rgba(0,0,0,0.19),
+                0px 6px 6px rgba(0,0,0,0.23);
+    color:rgb(255, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    font-size: 28px;
+    transition: all 1s;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn1::before, .btn1::after{
+    content: '';
+    width:40px;
+    height:10px;
+    position: absolute;
+    border: 0px solid rgb(255, 0, 0);
+    transition: all 1s;
+}
+.btn1::before{
+    bottom: 0px;
+    right: 0px;
+    border-top: 3px solid rgb(255, 0, 0);
+    border-left:3px solid rgb(255, 0, 0);
+    transform: rotate(180deg);
+}
+.btn1::after{
+    top: 0px;
+    left: 0px;
+    border-top: 3px solid rgb(255, 0, 0);
+    border-left:3px solid rgb(255, 0, 0);
+}
+.btn1:hover::after, .btn1:hover::before{
+width: 98%;
+height: 94%;
+}
+.btn1:active{
+    transition: 0.1s;
+    background-color: rgb(255, 0, 0);
+    color:black;
+}
+
+footer{
+    grid-area: foot;
+}
