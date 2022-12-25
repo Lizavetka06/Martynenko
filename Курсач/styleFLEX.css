@@ -1619,3 +1619,10 @@ div.gallery{
         line-height: 1.5;
     }
 }
+@media (min-width: 1600px){
+    .body {
+    display: grid;
+    grid-template-columns: 1fr 60vw 1fr;
+    grid-template-rows: 200px 70px 2400px 290px;
+    }
+}
